@@ -1,0 +1,54 @@
+\geometry{verbose,tmargin=3cm,bmargin=2cm,lmargin=3cm,rmargin=3cm} 
+\renewcommand*{\glspostdescription}{}
+
+\setlength{\footskip}{10mm}
+
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+\definecolor{dkgreen}{rgb}{0,.6,0}
+\definecolor{dkblue}{rgb}{0,0,.6}
+\definecolor{dkyellow}{cmyk}{0,0,.8,.3}
+
+\definecolor{zcgray}{rgb}{.7, .7, .7}
+
+\clubpenalty = 10000 \widowpenalty = 10000 \displaywidowpenalty = 10000
+\addtokomafont{caption}{\small} 
+
+\addto\extrasngerman{
+    \def\sectionautorefname{Kapitel}
+    \def\subsectionautorefname{Kapitel}
+    \def\subsubsectionautorefname{Kapitel}
+}
+
+\lstset{
+    numbers=left, 
+    numberstyle=\tiny, 
+    numbersep=5pt,
+    breaklines=true,
+    frame=single,
+    language=sh,
+    basicstyle=\ttfamily\fontsize{10}{12}\selectfont,
+    keywordstyle    = \color{dkblue},
+    stringstyle     = \color{red},
+    identifierstyle = \color{dkgreen},
+    commentstyle    = \color{gray},
+    emph            =[1]{php},
+    emphstyle       =[1]\color{black},
+    emph            =[2]{if,and,or,else},
+    emphstyle       =[2]\color{dkyellow}
+}
+
+\renewcommand*{\glspostdescription}{}
+
+% sorgt dafür, dass bei Leerzeile die Einrückung verhindert und stattdessen eine Leerzeile eingefügt wird % erspart bigskips und erhöht die Lesbarkeit im LaTeX-Text 
+\KOMAoptions{parskip=full*}
+
+% ändert Titelschriftart in Serifen-Normalschriftart
+\addtokomafont{disposition}{\rmfamily} 
+
+\makenoidxglossaries{}
+\loadglsentries{misc/glossary.tex}
+
+% \fontfamily{Arial}\selectfont
+\sloppy

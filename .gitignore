@@ -1,0 +1,16 @@
+*.pptx
+*.pdf
+*.aux
+*.log
+*.glsdefs
+*.gz
+*.out
+*.fls
+*.fdb_latexmk
+*.blg
+*.bbl
+*.toc
+*.bak
+*.doc
+*.docx
+md-converted

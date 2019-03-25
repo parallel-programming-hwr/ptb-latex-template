@@ -1,0 +1,99 @@
+\documentclass[
+	12pt, 
+	a4paper,
+	numbers=noenddot, %Entfernt Punkt hinter Gliederungsnummern
+	ngerman,
+	headsepline, %Headertrennlinie
+    oneside,
+    version=first
+	]{scrbook}
+
+% ------- Imports ----------
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{float}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{setspace}
+\usepackage[acronym, nonumberlist]{glossaries}
+\usepackage{listings,xcolor}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{graphicx}
+\usepackage{chngcntr}
+\usepackage{tgbonum}
+\usepackage{subfig}
+\usepackage{color, colortbl}
+
+\usepackage{metadata}
+\usepackage{lib/customcommands}
+
+\usepackage[ 
+   colorlinks,        % Links ohne Umrandungen in zu wählender Farbe 
+   linkcolor=black,   % Farbe interner Verweise 
+   filecolor=black,   % Farbe externer Verweise 
+   citecolor=black,   % Farbe von Zitaten 
+   urlcolor=blue	  % Farbe von Links
+]{hyperref}
+
+% --------Settings----------
+
+\include{hyphenation}
+\include{lib/customstyle}
+
+% --------Environments------
+
+\include{lib/environments}
+
+% --------Title------------
+
+\begin{document}
+\include{lib/title}
+
+% --------Abstract----------
+
+\include{chapters/abstract}
+
+\addcontentsline{toc}{chapter}{Abstract}
+
+
+%--------------------------
+
+\pagenumbering{Roman}
+\newpage
+\newpage
+
+
+\tableofcontents{}
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
+
+%\listoffigures
+%\listoftables
+
+\addcontentsline{toc}{chapter}{Akronyme}
+\printnoidxglossaries{}
+
+\clearpage
+
+%% arabische Seitenzahlen
+\pagenumbering{arabic}
+
+% --------Content----------
+
+% \include{chapters/chaptername}
+
+% -------------------------
+
+\bibliography{literatur}
+\bibliographystyle{hwrbib}
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+
+% -Ehrenwörtliche Erklärung-
+
+\include{lib/erklaerung}
+
+%--------------------------
+
+\end{document}
