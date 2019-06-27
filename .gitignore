@@ -13,4 +13,5 @@
 *.bak
 *.doc
 *.docx
+*.synctex*
 md-converted
