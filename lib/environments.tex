@@ -1,3 +1,5 @@
+
+% Requirements table
 \newenvironment{reqtable}{
 	\begin{tabular}{| p{0.05\linewidth} | p{0.35\linewidth} | p{0.5\linewidth} |}
         \hline
@@ -6,4 +8,18 @@
 }{
 	\hline
 	\end{tabular}
+}
+
+% table listing keys with values/descriptions
+% parameters:
+% 1 - the column name of the key
+% 2 - the column name of the description/value 
+\newenvironment{keyvaluetable}[2]{
+	\begin{tabular}{| p{0.35\linewidth} | p{0.5\linewidth} |}
+        \hline
+        \rowcolor{zcgray}
+	\textbf{#1} & \textbf{#2}\\ \hline
+}{
+	\hline
+\end{tabular}
 }
