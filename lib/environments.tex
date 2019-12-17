@@ -10,6 +10,17 @@
 	\end{tabular}
 }
 
+% Weighted Requirements table
+\newenvironment{wreqtable}{
+	\begin{tabular}{| p{0.05\linewidth} | p{0.325\linewidth} | p{0.45\linewidth} | p{0.175\linewidth} |}
+        \hline
+        \rowcolor{zcgray}
+	\textbf{Nr.} & \textbf{Anforderung} & \textbf{Erläuterung} & \textbf{Gewichtung} \\ \hline
+}{
+	\hline
+	\end{tabular}
+}
+
 % table listing keys with values/descriptions
 % parameters:
 % 1 - the column name of the key
