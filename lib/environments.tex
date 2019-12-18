@@ -21,6 +21,17 @@
 	\end{tabular}
 }
 
+% "Weighted evaluation of Requirements" table
+\newenvironment{ereqtable}{
+	\begin{tabular}{| p{0.5\linewidth} | p{0.25\linewidth} | p{0.25\linewidth} |}
+        \hline
+        \rowcolor{zcgray}
+	\textbf{Anforderung} & \textbf{Erfüllungsgrad} & \textbf{Erfüllungsgrad (gewichtet)}\\ \hline
+}{
+	\hline
+	\end{tabular}
+}
+
 % table listing keys with values/descriptions
 % parameters:
 % 1 - the column name of the key
