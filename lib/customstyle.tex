@@ -11,6 +11,9 @@
 \definecolor{dkyellow}{cmyk}{0,0,.8,.3}
 
 \definecolor{zcgray}{rgb}{.7, .7, .7}
+\definecolor{zcgreen}{rgb}{.4, 1, .4}
+\definecolor{zcorange}{rgb}{1, .7, .2}
+\definecolor{zcred}{rgb}{1, .4, .4}
 
 \clubpenalty = 10000 \widowpenalty = 10000 \displaywidowpenalty = 10000
 \addtokomafont{caption}{\small} 
@@ -41,14 +44,11 @@
 
 \renewcommand*{\glspostdescription}{}
 
-% sorgt dafür, dass bei Leerzeile die Einrückung verhindert und stattdessen eine Leerzeile eingefügt wird % erspart bigskips und erhöht die Lesbarkeit im LaTeX-Text 
 \KOMAoptions{parskip=full*}
 
-% ändert Titelschriftart in Serifen-Normalschriftart
 \addtokomafont{disposition}{\rmfamily} 
 
 \makenoidxglossaries{}
 \loadglsentries{misc/glossary.tex}
 
-% \fontfamily{Arial}\selectfont
 \sloppy
